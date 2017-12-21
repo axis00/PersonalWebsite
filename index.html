@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="typer/typer.js"></script>
+        <script src="jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="typer/typer.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <link rel="stylesheet" type="text/css" href="parallax.css">
+        <script>
+            $().ready(function() {
+                typer('#greetingText',150).line('').pause(1000).continue('HEY!').pause(1000).back('all')
+                    .continue("I'm David :)").cursor({block:true});
+            })
+        </script>
+    </head>
+    <body>
+        <div id = "greeting"> 
+            <div id = "consoleGreeting">
+                <h1 id = "prompt"> > </h1>
+                <h1 id = "greetingText"></h1>
+            </div>
+        </div>
+    </body>
+</html>

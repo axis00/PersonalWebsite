@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+#greeting{
+    height: 100vh;
+    background-color: #EF5D62;
+    display: grid;
+    align-content: center;
+}
+
+#consoleGreeting{
+    font-family: monospace;
+    color: #EFECCA;
+    display: flex;
+    font-size: 2em;
+    padding: 10%;
+}
+
+#consoleGreeting h1{
+    margin: 0;
+    margin-right: .3em;
+}
