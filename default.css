@@ -7,6 +7,8 @@ body{
     background-color: #EF5D62;
     display: grid;
     align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px,auto);
 }
 
 #consoleGreeting{
@@ -14,10 +16,27 @@ body{
     color: #EFECCA;
     display: flex;
     font-size: 2em;
-    padding: 10%;
+    grid-column:2/ span 3;
+    grid-row:2;
+    width: 100%;
 }
 
 #consoleGreeting h1{
     margin: 0;
     margin-right: .3em;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
+}
+
+#me{
+    display: block;
+    grid-column:4;
+    grid-row:1;
+}
+
+#me svg{
+    stroke-width:1px;
+    stroke:#EFECCA;
+    height: 50vh;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
 }
